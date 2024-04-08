@@ -1,1 +1,5 @@
-<%= sanitize(field.to_s || "", attributes: %w(style)) %>
+<% if !field.to_s.nil? %>
+    <%= sanitize(field.to_s, attributes: %w(style)) %>
+<% else %>
+    <p></p>
+<% end %>
