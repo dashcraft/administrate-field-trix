@@ -1,1 +1,5 @@
-<%= truncate(strip_tags(field.to_s), length: 250) %>
+<% if !field.to_s.nil? %>
+    <%= truncate(strip_tags(field.to_s), length: 250) %>
+<% else %>
+    <p></p>
+<% end %>
