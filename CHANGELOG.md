@@ -1,3 +1,3 @@
 # Changelog
 
-Added new catches for when the body content is actuall bil.
+Added new catches for when the body content is actuall nil.

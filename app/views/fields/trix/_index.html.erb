@@ -1,4 +1,4 @@
-<% if !field.to_s.nil? %>
+<% if field.to_s.present? %>
     <%= truncate(strip_tags(field.to_s), length: 250) %>
 <% else %>
     <p></p>
